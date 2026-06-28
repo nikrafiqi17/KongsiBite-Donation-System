@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background-image:url('pbg.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    min-height:100vh;
+}
+
+/* NAVBAR */
+nav{
+    width:70%;
+    max-width:1200px;
+    margin:20px auto;
+    background:#ff0000 !important;
+    border-radius:25px;
+    padding:10px 0;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    margin:0;
+    padding:0;
+}
+
+nav li{
+    flex:1;
+    text-align:center;
+    position:relative;
+}
+
+nav li:not(:last-child)::after{
+    content:"";
+    position:absolute;
+    right:0;
+    top:50%;
+    transform:translateY(-50%);
+    width:2px;
+    height:30px;
+    background:white;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    display:inline-block;
+    padding:8px 15px;
+    border-radius:12px;
+}
+
+nav a.active{
+    background:#ff9e9e;
+}
+
+/* LOGO */
+.logo{
+    width:90%;
+    margin:auto;
+}
+
+.logo h1{
+    color:red;
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.logo span{
+    color:red;
+}
+
+/* MAIN CONTENT BOX */
+.container{
+    width:90%;
+    margin:40px auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:30px;
+
+    background:rgba(255,255,255,0.92);
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
+.text-content{
+    flex:1.2;
+}
+
+.text-content h2{
+    font-size:40px;
+    font-style:italic;
+    margin-bottom:20px;
+}
+
+.text-content p{
+    font-size:24px;
+    line-height:1.6;
+}
+
+.text-content h3{
+    margin-top:30px;
+    text-align:right;
+    font-size:24px;
+    font-style:italic;
+}
+
+.image-content{
+    flex:0.8;
+    display:flex;
+    justify-content:center;
+}
+
+.image-content img{
+    width:420px;
+    height:280px;
+    object-fit:cover;
+    border-radius:20px;
+}
+
+/* LINE */
+hr{
+    width:90%;
+    margin:20px auto;
+    border:1px solid rgba(0,0,0,0.3);
+}

@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background-image:url('pbg.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    min-height:100vh;
+    padding:40px;
+}
+
+.container{
+    max-width:550px;
+    margin:auto;
+    background:rgba(255,255,255,0.95);
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+}
+
+h2{
+    text-align:center;
+    color:red;
+    margin-bottom:25px;
+    font-size:35px;
+}
+
+.form-group{
+    margin-bottom:18px;
+}
+
+label{
+    display:block;
+    margin-bottom:6px;
+    font-weight:bold;
+    color:#333;
+}
+
+input,
+select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+}
+
+input:focus,
+select:focus{
+    outline:none;
+    border-color:red;
+}
+
+.payment-box{
+    background:#fff5f5;
+    border:1px solid #ffd0d0;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.payment-box h3{
+    color:red;
+    margin-bottom:10px;
+}
+
+.payment-box img{
+    width:220px;
+    height:220px;
+    margin:10px 0;
+    object-fit:contain;
+}
+
+.bank-number{
+    font-size:20px;
+    font-weight:bold;
+    color:red;
+    margin-top:10px;
+}
+
+.btn{
+    width:100%;
+    padding:14px;
+    background:red;
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#cc0000;
+}

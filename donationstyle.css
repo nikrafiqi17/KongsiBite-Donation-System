@@ -1,0 +1,157 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background-image:url('pbg.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    min-height:100vh;
+}
+
+/* NAVBAR */
+nav{
+    width:70%;
+    max-width:1200px;
+    margin:20px auto;
+    background:#ff0000 !important;
+    border-radius:25px;
+    padding:10px 0;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    margin:0;
+    padding:0;
+}
+
+nav li{
+    flex:1;
+    text-align:center;
+    position:relative;
+}
+
+nav li:not(:last-child)::after{
+    content:"";
+    position:absolute;
+    right:0;
+    top:50%;
+    transform:translateY(-50%);
+    width:2px;
+    height:30px;
+    background:white;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
+    display:inline-block;
+    padding:8px 15px;
+    border-radius:12px;
+}
+
+nav a.active{
+    background:#ff9e9e;
+}
+
+/* LOGO */
+.logo{
+    width:90%;
+    margin:20px auto;
+}
+
+.logo h1{
+    color:red;
+    font-size:55px;
+    font-weight:bold;
+}
+
+/* TITLE */
+.donation-title{
+    text-align:center;
+    font-size:55px;
+    font-weight:bold;
+    margin:20px 0 40px;
+}
+
+/* CONTAINER */
+.donation-container{
+    width:90%;
+    margin:auto;
+}
+
+.donation-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+/* CARD */
+.donation-card{
+    background:rgba(255,255,255,0.95);
+    border-radius:20px;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.donation-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.donation-card h3{
+    margin-top:15px;
+    font-size:22px;
+}
+
+.donation-card p{
+    margin-top:8px;
+    font-size:16px;
+    color:#555;
+}
+
+/* BUTTON */
+.donate-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 25px;
+    background:red;
+    color:white;
+    text-decoration:none;
+    border-radius:20px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.donate-btn:hover{
+    background:#d60000;
+}
+
+/* MOBILE */
+@media(max-width:900px){
+
+    .donation-grid{
+        grid-template-columns:1fr;
+    }
+
+    nav{
+        width:90%;
+    }
+
+    .donation-title{
+        font-size:40px;
+    }
+}

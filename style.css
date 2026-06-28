@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.35),
+    rgba(0,0,0,0.35)),
+    url('bg.jpg');
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+.kongsi{
+    font-size: 90px;
+    font-weight: 800;
+    color: white;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    text-shadow:
+    3px 3px 8px rgba(0,0,0,0.6);
+
+    line-height: 80px;
+}
+
+.bite{
+    font-size: 100px;
+    font-family: Brush Script MT, cursive;
+
+    color: #ff4d4d;
+
+    margin-top: -10px;
+
+    text-shadow:
+    2px 2px 6px rgba(0,0,0,0.5);
+}
+
+.container{
+    width: 400px;
+    padding: 40px;
+
+    border-radius: 25px;
+
+    background: rgba(255,255,255,0.12);
+
+    backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,0.3);
+
+    text-align: center;
+}
+
+h2{
+    font-size: 42px;
+    color: white;
+
+    margin-bottom: 30px;
+
+    text-transform: uppercase;
+}
+
+.input-box{
+    margin-bottom: 25px;
+}
+
+.input-box input{
+    width: 100%;
+    padding: 14px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: rgba(255,255,255,0.18);
+
+    color: white;
+
+    font-size: 15px;
+    outline: none;
+}
+
+.input-box input::placeholder{
+    color: rgba(255,255,255,0.75);
+}
+
+.login-btn{
+    width: 100%;
+    padding: 14px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #ff4d4d;
+
+    color: white;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.register-btn{
+    width: 100%;
+    padding: 14px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #ff4d4d;
+
+    color: white;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.extra{
+    margin-top: 20px;
+
+    color: white;
+}
+
+.extra a{
+    color: #ffd6d6;
+
+    text-decoration: none;
+}
+
