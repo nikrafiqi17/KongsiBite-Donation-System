@@ -3,13 +3,11 @@
 # AI Usage Log
 
 ## Project
-NGO Donation System (Web Application)
+KongsiBite Donation System (Web Application)
 
-## Student
-[Your Name]
 
 ## Group
-D9
+CDCS1104F
 
 ## AI Tool Used
 - ChatGPT (OpenAI GPT-5.5)
